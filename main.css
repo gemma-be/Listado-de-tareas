@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0 auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: lightskyblue;
+  background-image: url(https://cdn-images.welcometothejungle.com/YqdftjjD4_pw65DPGCTYiyVT04zIyhc52ZgMhQWRPO4/rs:auto:2000::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9hcnRpY2xlL2ltYWdlLzE0NTUvMTU4NDYxL2xpc3RhLXRhcmVhcy5qcGc);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 150px 100px 300px 100px;
+  grid-template-areas:
+    "title"
+    "inputs"
+    "cajaTareas"
+    "footer";
+}
+
+.title {
+  grid-area: title;
+  display: list-item;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.inputs {
+  grid-area: inputs;
+  text-align: center;
+}
+
+.cajaTareas {
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  align-content: center;
+}

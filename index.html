@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./main.css">
+	<title>Listado</title>
+</head>
+
+<body>
+	<section class="seccion">
+		<div style=" text-align: center;">
+
+			<h1>LISTADO DE TAREAS</h1><br>
+			<div class="inputs">
+
+				<input class="input" type="text" id="inputTarea" placeholder="Añadir Tarea"><br>
+
+				<input class="btn" type="button" value="Enviar" onclick="addTodo()">
+			</div>
+
+			<div id="listacontainer" class="none" style="display: none;">
+
+				<h1>Lista de Tareas:</h1>
+				<hr>
+				<br>
+				<div id="listaContainer">
+
+				</div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<script src="tareas.ts"></script>
+	<script src="tareas.js"></script>
+
+
+
+</body>
+
+</html>
